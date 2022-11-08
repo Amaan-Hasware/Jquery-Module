@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p class="test" style="color: red; font-size: 30px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia at assumenda quidem explicabo quo ducimus culpa porro consequuntur, repellat quibusdam eligendi nobis neque laborum, repudiandae totam recusandae libero cum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate magnam soluta deserunt ut quia, fuga, fugiat, aliquid architecto impedit saepe tenetur accusamus consectetur corporis quae? Placeat, ipsam recusandae ipsum id rerum nesciunt neque. Totam perspiciatis autem minus! Quidem magnam nemo hic quaerat illo nihil.
+    </p>
+
+    <br>
+
+    <p class="test test2" style="color: rgb(68, 0, 255); font-size: 30px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, corporis illo praesentium tempore necessitatibus incidunt blanditiis exercitationem distinctio labore nihil quia laborum quaerat. Veritatis quaerat, quod pariatur commodi quibusdam quia eum sed laborum dolorum explicabo fugit doloribus placeat consectetur ab dicta reiciendis veniam blanditiis amet optio aut non, nobis nihil. Dignissimos est atque eius totam iste voluptatem accusantium rem esse?</p>
+    
+    <br>
+
+    <ul style="color: rgb(250, 0, 217); font-size: 30px">
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim pariatur iste qui incidunt harum maxime, quod rerum aliquam veritatis maiores.</li>
+        <br>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore totam deleniti aperiam veniam incidunt excepturi beatae reprehenderit ratione nesciunt inventore!</li>
+    </ul>
+
+    <button id="hideandseek" style="font-size: 40px;">Submit</button>
+    
+    <script>
+        $(document).ready(function(){
+            $('#hideandseek').click(function(){
+                $('li:last').hide();
+            });
+        });
+
+    </script>
+
+</body>
+</html>

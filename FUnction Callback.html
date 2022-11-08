@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+    #animatebtn{
+        margin-left: 883px;        
+    }
+    button{
+        font-size: 20px;
+    }
+    div{
+        font-size: 30px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color: aqua;
+        border-radius: 14px;
+        margin: 50px;
+        padding-top:30px ;
+        padding-bottom:30px ;
+        margin-left: 700px;
+        margin-right: 700px;
+        position: relative;
+
+    }
+    </style>
+</head>
+<body>
+
+    <header style="text-align: center; font-size: 90px; font-family: Arial, Helvetica, sans-serif;">
+        <strong>Programming Threshold</strong>
+    </header>
+
+   <div id="box" style="border:1px solid black; text-align: center;">
+    <h2>Test Box</h2>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id saepe cumque aliquam magni maxime quibusdam repudiandae tempore qui blanditiis?</p> -->
+   </div>
+   <br>
+   <!-- <button id="slideupbtn">Slide Up</button>
+   <button id="slidedownbtn">Slide Down</button>
+   <button id="slidetogglebtn">Slide Toggle</button> -->
+
+
+    <!-- <button id="animatebtn" style="font-size: 40px;">Submit</button> -->
+
+    <script>
+        $(document).ready(function(){
+            $('#animatebtn').click(function(){
+                $('#box').hide(function(){
+                    alert("Division is now hidden")
+                })
+                })
+        })
+        // $(document).ready(function(){
+        //     $('#slidedownbtn').click(function(){
+        //         $('#box').slideDown('slow')
+        //     })
+        // })
+        // $(document).ready(function(){
+        //     $('#slidetogglebtn').click(function(){
+        //         $('#box').slideToggle( )
+        //     })
+        // })
+    </script>
+    
+</body>
+</html>

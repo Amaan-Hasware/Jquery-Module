@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header style="text-align: center; font-size: 90px; font-family: Arial, Helvetica, sans-serif;">
+        <strong>Programming Threshold</strong>
+    </header>
+
+    <div>
+        <img id="imglogo" src="C:\Users\Asus\Downloads\Temps\PT LOGO Transparent.png" style=" padding-left: 680px;" alt="img here">
+    </div>
+
+    <div>
+        <button  style="font-size:110px; margin-left:800px" id="hide">Hide</button>
+        <button  style="font-size:110px; margin-left:250px"id="show">Show</button>
+
+    </div>
+
+    <!-- <button id="hideshow" style="font-size: 40px; margin-left: 470px;">Submit</button> -->
+
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('#imglogo').hide('slow')
+            })
+        })
+        $(document).ready(function(){
+            $('#show').click(function(){
+                $('#imglogo').show('slow')
+            })
+        })
+    </script>
+    
+</body>
+</html>

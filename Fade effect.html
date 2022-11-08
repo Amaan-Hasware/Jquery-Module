@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+    button#fadeoutbtn{
+        margin-left: 783px;        
+    }
+    button{
+        font-size: 20px;
+    }
+    div{
+        font-size: 30px;
+        background-color: aqua;
+        border-radius: 14px;
+        margin: 50px;
+        margin-left: 400px;
+        margin-right: 400px;
+
+    }
+    </style>
+</head>
+<body>
+
+    <header style="text-align: center; font-size: 90px; font-family: Arial, Helvetica, sans-serif;">
+        <strong>Programming Threshold</strong>
+    </header>
+
+   <div id="box" style="border:1px solid black; text-align: center;">
+    <h2>Test Box</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id saepe cumque aliquam magni maxime quibusdam repudiandae tempore qui blanditiis?</p>
+   </div>
+   <br>
+   <button id="fadeoutbtn">Fade Out</button>
+   <button id="fadeinbtn">Fade In</button>
+   <button id="fadetogglebtn">Fade Toggle</button>
+
+
+    <!-- <button id="hideshow" style="font-size: 40px; margin-left: 470px;">Submit</button> -->
+
+    <script>
+        $(document).ready(function(){
+            $('#fadeoutbtn').click(function(){
+                $('#box').fadeOut('slow')
+            })
+        })
+        $(document).ready(function(){
+            $('#fadeinbtn').click(function(){
+                $('#box').fadeIn('slow')
+            })
+        })
+        $(document).ready(function(){
+            $('#fadetogglebtn').click(function(){
+                $('#box').fadeToggle()
+            })
+        })
+    </script>
+    
+</body>
+</html>
